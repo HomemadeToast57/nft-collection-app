@@ -1,0 +1,16 @@
+.punkList {
+    display: flex;
+    overflow: scroll;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.punkList > .collectionCard {
+    cursor: pointer;
+}
+
+.punkList::-webkit-scrollbar {
+    display: none;
+}   

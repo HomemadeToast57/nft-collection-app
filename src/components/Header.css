@@ -1,0 +1,101 @@
+.header {
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > div {
+    margin: 10px;
+}
+
+.punkLogo {
+    width: 200px;
+}
+
+.punkLogo:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.searchBar {
+    display: flex;
+    background-color: #1c1c1e;
+    flex: 1;
+    align-items: center;
+    border-radius: 50px ;
+    padding-right: 15px;
+}
+
+.searchIconContainer {
+    margin: 15px;
+    object-fit: contain;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #eee;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.headerItems {
+    display: flex;
+    align-items: center;
+    color: #a1a5b0;
+}
+
+.headerItems > a {
+    text-decoration: none;
+    color: #a1a5b0;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.headerItems > a:visited {
+    color: #a1a5b0;
+}
+
+.headerItems > a:hover {
+    color: #fff;
+}
+
+
+.themeSwitchContainer {
+    display: flex;
+    background-color: #1c1c1e;
+    border-radius: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.themeSwitchContainer > img {
+    height: 25px;
+}
+
+.themeSwitchContainer:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.loginButton {
+    background: linear-gradient(to right, #59f9b7, #00d2ff);
+    padding: 15px;
+    max-width: 220px;
+    text-align: center;
+    border-radius: 50px;
+    color: black;
+    font-weight: 600;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+.loginButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

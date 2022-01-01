@@ -1,0 +1,114 @@
+.main {
+    color: white;
+    max-height: 60vh;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mainContent {
+    display: flex;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    justify-content: space-between;
+    padding: 25px 0px 5px 0px;
+    width: min(800px, fit-content);
+    flex-shrink: 1;
+
+}
+
+.punkHighlight {
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.punkImageContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 20px;
+}
+.punkImage {
+    object-fit: cover;
+    max-height: 20vw;
+    min-width: 250px;
+    min-height: 250px;
+}
+.punkDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.75;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.itemNumber {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.ownerDetails {
+    display: flex;
+    align-items: center;
+}
+
+.ownerImageContainer {
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+}
+
+.ownerImage {
+    object-fit: cover;
+    max-height: 80px;
+    border-radius: 20%;
+    margin-right: 10px;
+}
+
+.name {
+    /* if greater than width shorten with ... */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+.handle {
+    color: rgb(47, 204, 165);
+}
+
+.socialMedia {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 40px;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.ownerLink > img {
+    width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ownerLink > img:hover {
+    filter: brightness(0.8);
+}

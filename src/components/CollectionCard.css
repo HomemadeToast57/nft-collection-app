@@ -1,0 +1,93 @@
+.collectionCard {
+  color: white;
+  background-color: #1a1c1e;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 500px;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.collectionCard > img {
+  width: 100%;
+}
+
+.details {
+  padding: 20px;
+}
+
+.cardName {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.id {
+  color: #a1a5b0;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  object-fit: contain;
+}
+
+.wethImage {
+  height: 20px;
+}
+
+.price {
+  margin-left: 5px;
+}
+
+.first {
+  margin-left: 30px;
+}
+
+.ownerContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.cardOwnerImageContainer {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  align-self: center;
+}
+
+.cardOwnerImage {
+  height: 50px;
+  border-radius: 20%;
+}
+
+.cardOwnerNameAndHandle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  height: fit-content;
+  width: 75%;
+}
+
+.cardOwnerHandle {
+  color: rgb(47, 204, 165);
+}
+
+.cardOwnerNameAndHandle > div {
+  display: inline-block;
+  font-size: 0.7rem;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
