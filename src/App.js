@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 
 import "./App.css";
 import Header from "./components/Header";
@@ -16,11 +15,12 @@ function App() {
 
   useEffect(() => {
     const getMyNfts = async () => {
-      const openSeaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0xdadd397c13b5a74566E939754CAaFd6E8aF7eCd0&order_direction=asc"
-      );
 
-      setPunkListData(openSeaData.data.assets);
+      //use fetch to get the data from the API
+      const response = await fetch("https://testnets-api.opensea.io/assets?asset_contract_address=0xdadd397c13b5a74566E939754CAaFd6E8aF7eCd0&order_direction=asc").then(res => res.json());
+
+      //set the data to the state
+      setPunkListData(response.assets);
     };
 
     return getMyNfts();
@@ -34,6 +34,10 @@ function App() {
         punkListData={punkListData}
         handleSelectPunk={handleSelectPunk}
       />
+      <h1 style={
+        {
+          color: "red",
+      }}>Test</h1>
     </div>
   );
 }
